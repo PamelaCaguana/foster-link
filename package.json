@@ -12,10 +12,16 @@
   "author": "Pamela Caguana",
   "license": "MIT",
   "dependencies": {
+    "connect-mongo": "^4.4.1",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "mongodb": "^3.6.6",
+    "express-sessions": "^1.0.1",
+    "method-override": "^3.0.0",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.7",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
     "tailwindcss": "^2.1.2"
   },
   "devDependencies": {
