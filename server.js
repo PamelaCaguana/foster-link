@@ -1,24 +1,26 @@
+const path = require('path')
 const express = require('express')
 const app = express()
-const PORT = 8000;
+const PORT = process.env.PORT || 8000
 const dotenv = require('dotenv')
+const morgan = require('morgan')
+const connectDB = require('./config/db')
+
+//Load config
+dotenv.config({ path: './config/config.env' })
+
+connectDB()
 
 //set up ejs for views
-app.set("view engine", "ejs");
+app.set("view engine", "ejs")
 
-//static folder
-app.use(express.static("public"))
-
-//parsing
-app.use(express.urlencoded({ extended: true }))
-app.use(express.json())
-
+//Routes
 app.use('/', require('./routes/index'))
 
-//move to posts.js in routes folder
-app.post('/posts', (req, res) => {
-    console.log('Hellooooooooooooooooo!')
-})
+//static folder
+app.use(express.static(path.join(__dirname, 'public')))
+
+app.use('/', require('./routes/index'))
 
 app.listen(PORT, function() {
     console.log(`listening on ${PORT}`)
