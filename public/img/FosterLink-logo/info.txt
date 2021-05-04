@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: SpaceText-Light
+font link: https://github.com/floriankarsten/space-text
+font author: Florian Karsten
+font author site: http://floriankarsten.com/
+
+
+icon designer: Cristiano Zoucas
+icon designer link: /cristiano.zoucas
+        
+{"bg":"#386766","icon":"#45C6B1","font":"#FFFFFF","slogan":"#ffffff"}
+      
