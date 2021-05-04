@@ -8,22 +8,29 @@
     <link rel="stylesheet" href="style.css">
     <title>FosterLink Login</title>
 </head>
-<body class="bg-gray-100">
-    <h1 class="text-4xl mx-auto py-3 px-3">Welcome <i class="fas fa-paw"></i></h1>
+<body class="bg-william">
+    <section>
+        <img src="./img/FosterLink-logo/cover.png" alt="FosterLink Logo">
+    </section>
+
+    <!-- <h1 class="text-4xl mx-auto py-3 px-3">Welcome <i class="fas fa-paw"></i></h1> -->
 
     <section class="container mt-1 mx-auto px-3">
         <section class="bg-white py-3 px-5 shadow rounded-lg">
             <form action="/pets" method="POST">
                 <div class="">
-                    <input type="text" placeholder="name" name="name" required class="w-full border boder-gray-300 py-2 px-3 rounded-lg shadow-sm focus:outline-none focus:border-indigo-300">
+                    <input type="email" placeholder="username" name="userName" required class="w-full border boder-gray-300 py-2 px-3 rounded-lg shadow-sm focus:outline-none focus:border-william">
                 </div>
                 <div class="mt-2">
-                    <input type="text" placeholder="pet" name="pet" required class="w-full border boder-gray-300 py-2 px-3 rounded-lg shadow-sm focus:outline-none focus:border-indigo-300">
+                    <input type="text" placeholder="password" name="password" required class="w-full border boder-gray-300 py-2 px-3 rounded-lg shadow-sm focus:outline-none focus:border-william">
                 </div>
                 <div class="">
-                    <button type="submit" class="bg-indigo-500 mt-3 hover:bg-indigo-400 text-white py-1 px-3 rounded">Submit</button>
+                    <button type="submit" class="bg-puerto-rico mt-3 hover:bg-puerto-rico-400 text-white py-1 px-3 rounded">Submit</button>
                 </div>
             </form>
+        </section>
+        <section class="mt-2 px-3">
+            <a href="signup" class="text-puerto-rico hover:text-puerto-rico-400">Sign Up?</a>
         </section>
     </section>
 </body>
