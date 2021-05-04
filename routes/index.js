@@ -5,9 +5,7 @@ const router = express.Router()
 //@route        GET /
 //add middleware as a second argument
 router.get('/', (req, res) => {
-    res.render('login', {
-        layout: 'login',
-    })
+    res.render('login')
 })
 
 //@description  Login/Landing Page
