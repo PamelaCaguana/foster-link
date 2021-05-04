@@ -1,0 +1,28 @@
+<%- include ('partials/header.ejs') -%>
+<body class="bg-william">
+    <section>
+        <img src="./img/FosterLink-logo/thin_cover.png" alt="FosterLink Logo">
+    </section>
+
+    <!-- <h1 class="text-4xl mx-auto py-3 px-3">Welcome <i class="fas fa-paw"></i></h1> -->
+
+    <section class="container mt-1 mx-auto px-3">
+        <section class="bg-white py-3 px-5 shadow rounded-lg">
+            <form action="/signup" method="POST">
+                <div class="">
+                    <input type="text" placeholder="username" name="userName" required class="w-full border boder-gray-300 py-2 px-3 rounded-lg shadow-sm focus:outline-none focus:border-william">
+                    <input type="email" placeholder="email" name="email" required class="w-full border boder-gray-300 py-2 px-3 rounded-lg shadow-sm focus:outline-none focus:border-william">
+                    <input type="password" placeholder="passwprd" name="password" required class="w-full border boder-gray-300 py-2 px-3 rounded-lg shadow-sm focus:outline-none focus:border-william">
+                    <input type="password" placeholder="confirm password" name="confirmPassword" required class="w-full border boder-gray-300 py-2 px-3 rounded-lg shadow-sm focus:outline-none focus:border-william">
+                    </div>
+                <div class="">
+                    <button type="submit" class="bg-puerto-rico mt-3 hover:bg-puerto-rico-400 text-white py-1 px-3 rounded">Submit</button>
+                </div>
+            </form>
+        </section>
+        <section class="">
+            <a href="signup" class="text-puerto-rico hover:text-puerto-rico-400">Sign Up?</a>
+        </section>
+    </section>
+</body>
+</html>
